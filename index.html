@@ -4,67 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Стажировки, Яндекс, Тинькофф, Контур, работа">
+    <meta name="keywords" content="Стажировки, Яндекс, Тинькофф, Контур, Касперский, работа">
     <meta name="description" content="Сервис для отслеживания стажировок">
+
+    <!-- <link rel="stylesheet" href="outline-prototype/css/outline-prototype-label.css"> -->
+    <!-- <link rel="stylesheet" href="CSS/style.css"/> -->
     <title>Стажировки</title>
 </head>
 
 <body>
-    <header>
-        <h1>Агрегатор стажировок</h1>
+    <header class="header">
+        <h1 class="logo">$</h1>
+        <nav class="internship-category">
+                <span><a href="#">Всё</a></span>
+                <span><a href="#">Аналитика</a></span>
+                <span><a href="#">Разработка</a></span>
+        </nav>
+        <div class="login">
+            <a href="#">Вход/Регистрация</a>
+        </div>
     </header>
-    <main>
+    <main class="body">
         <section>
-            <h2>Актуальные</h2>
-            <nav>
+            <h1><strong>Доступные стажировки</strong></h1>
+            <nav class="internships">
                 <ul>
                     <li>
-                        <p><a href="https://yandex.ru/yaintern/internship">Яндекс</a></p>
+                        <p><a href="https://yandex.ru/yaintern/internship">Яндекс</a> Круглый год</p>
                     </li>
                     <li>
-                        <p><a href="https://education.tbank.ru/start/">Тинькофф</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://route256.ozon.ru/?  rr=1">Озон Route</a></p>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section>
-            <h2>В режиме ожидания</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <p><a href="https://sbergraduate.ru/sberseasons-moscow/">Сбербанк</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://safeboard.kaspersky.ru/">Лаборатория Касперского</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://internship.vk.company/internship">VK</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://kontur.ru/education/programs/intern?ysclid=lq4xv82jcd368102253">Контур</a>
+                        <p><a href="https://safeboard.kaspersky.ru/">Лаборатория Касперского</a>
+                            <time datetime="2024-10-27">до 27 октября</time>
                         </p>
                     </li>
                     <li>
-                        <p><a href="https://start.avito.ru/tech?ysclid=lq5ad4exyh714880742#popup:reginfo">Авито</a></p>
+                        <p><a href="https://careers.yadro.com/internship/">Yadro</a></p>
                     </li>
                     <li>
-                        <p><a href="https://career.raiffeisen.ru/start">Райффайзенбанк</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://alfabank.ru/alfastudents/ichoosealfa/#directions">Альфа Банк</a></p>
+                        <p><a href="https://astondevs.ru/">Aston</a></p>
                     </li>
                     <li>
                         <p><a href="https://job.mts.ru/programs/start">МТС</a></p>
                     </li>
                     <li>
-                        <p><a href="https://job.megafon.ru/vacancy/all">Мегафон</a></p>
+                        <p><a href="https://alfabank.ru/alfastudents/ichoosealfa/#directions">Альфа Банк</a></p>
                     </li>
                     <li>
-                        <p><a href="https://vtbcareer.com/">ВТБ</a></p>
+                        <p><s><a
+                                    href="https://kontur.ru/education/programs/intern?ysclid=lq4xv82jcd368102253">Контур</a></s>
+                            <time datetime="2024-11-01">до ноября</time>
+                        </p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://education.tbank.ru/start/">Тинькофф</a></s>
+                            <time datetime="2024-12-01">до декабря</time>
+                        </p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://career.aton.ru/start/ittp/">Атон</a></s>
+                            <time datetime="2025-04-01">до 1 апреля</time>
+                        </p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://route256.ozon.ru/?  rr=1">Озон Route</a></s></p>
+                    </li>
+                    <li>
+                        <p><s><a
+                                    href="https://start.avito.ru/tech?ysclid=lq5ad4exyh714880742#popup:reginfo">Авито</a></s>
+                        </p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://sbergraduate.ru/sberseasons-moscow/">Сбербанк</a></s></p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://internship.vk.company/internship">VK</a></s></p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://career.raiffeisen.ru/start">Райффайзенбанк</a></s></p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://vtbcareer.com/">ВТБ</a></s></p>
+                    </li>
+                    <li>
+                        <p><s><a href="https://job.megafon.ru/vacancy/all">Мегафон</a></s></p>
+                    </li>
+
+                    <li>
+                        <p><s><a href="https://www.digitalleague.ru/traineeships/directions">Лига Цифровой
+                                    Экономики</a></s></p>
                     </li>
                 </ul>
             </nav>
@@ -72,9 +99,9 @@
 
 
     </main>
-    <footer>
-        <article> 
-            <pre>
+    <footer class="footer">
+        <article>
+            <pre class="old-logo">
                     $$
                       $$$
                           $$$$
@@ -92,28 +119,13 @@
  $$$$$           $$$$$ $$$$$$  $$$$ $
 $$$$                               $$$
             </pre>
-            <a href="mailto:pafikovpafael@gmail.com">
-                <span>
-                    Почта
-                </span>
-            </a>
-            <a href="https://t.me/Etozherraf">
-                <span>
-                    Telegram
-                </span>
-            </a>
+            <div class="contacts">
+                <a href="#"><span>Почта</span></a>
+                <a href="#"><span>Telegram</span></a>
+            </div>
+            <div class="location">г. Санкт-Петербург 52</div>
         </article>
     </footer>
 </body>
 
 </html>
-
-<!-- <link rel="stylesheet" href="outline-prototype/css/outline-prototype-label.css"> -->
-<!-- <link rel="stylesheet" href="style.css"/> -->
-<!-- <div class="qwerty">Привет</div>
-        <div id="asd">Пока</div>
-        <div class="sad">qwedefewfew</div> -->
-<!-- <h1></h1>
-        <p></p>
-        <strong></strong>
-        <b></b> -->
