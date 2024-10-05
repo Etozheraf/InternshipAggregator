@@ -4,116 +4,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Стажировки, Яндекс, Тинькофф, Контур, работа">
+    <meta name="keywords" content="Стажировки, Яндекс, Тинькофф, Контур, Касперский, работа">
     <meta name="description" content="Сервис для отслеживания стажировок">
+
+    <!-- <link rel="stylesheet" href="outline-prototype/css/outline-prototype-label.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/png" href="/img/Logo.png">
     <title>Стажировки</title>
 </head>
 
 <body>
-    <header>
-        <h1>Агрегатор стажировок</h1>
+    <header class="header">
+        <p class="logo">$</p>
+        <nav class="internship-category">
+            <p><a href="#">Всё</a></p>
+            <p><a href="#">Аналитика</a></p>
+            <p class="internship-category_p3"><a href="#">Разработка</a></p>
+        </nav>
+        <div class="login">
+            <a href="#">Вход/Регистрация</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Актуальные</h2>
+    <main class="body">
+        <section class="internships">
+            <h1 class="internships_h1">Доступные стажировки</h1>
             <nav>
-                <ul>
-                    <li>
-                        <p><a href="https://yandex.ru/yaintern/internship">Яндекс</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://education.tbank.ru/start/">Тинькофф</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://route256.ozon.ru/?  rr=1">Озон Route</a></p>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+                <div class="internships-list">
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://yandex.ru/yaintern/internship">
+                                <img src="../img/Yandex.png" alt="Яндекс">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description">
+                            <p>Открыта круглый год</p>
+                        </div>
+                    </div>
 
-        <section>
-            <h2>В режиме ожидания</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <p><a href="https://sbergraduate.ru/sberseasons-moscow/">Сбербанк</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://safeboard.kaspersky.ru/">Лаборатория Касперского</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://internship.vk.company/internship">VK</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://kontur.ru/education/programs/intern?ysclid=lq4xv82jcd368102253">Контур</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="https://start.avito.ru/tech?ysclid=lq5ad4exyh714880742#popup:reginfo">Авито</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://career.raiffeisen.ru/start">Райффайзенбанк</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://alfabank.ru/alfastudents/ichoosealfa/#directions">Альфа Банк</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://job.mts.ru/programs/start">МТС</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://job.megafon.ru/vacancy/all">Мегафон</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://vtbcareer.com/">ВТБ</a></p>
-                    </li>
-                </ul>
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo kaspersky">
+                            <a class="internship-list_card_link" href="https://safeboard.kaspersky.ru/">
+                                <img src="https://safeboard.kaspersky.ru/assets/icons/safeboard__is_white.png"
+                                    alt="Лаборатория Касперского">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description">
+                            <p><time datetime="2024-10-27">Открыта до 27 октября</time></p>
+                        </div>
+                    </div>
+
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo yadro">
+                            <a class="internship-list_card_link" href="https://careers.yadro.com/internship/">
+                                <img src="https://careers.yadro.com/wp-content/themes/yadro-career/assets/public/img/logo.svg"
+                                    alt="Yadro">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://astondevs.ru/">
+                                <img src="https://storage.yandexcloud.net/dev.astonsite.s3backet/aston-redisign/common/logo/AstonLogo_dark.svg"
+                                    alt="Aston">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://job.mts.ru/programs/start">
+                                <img src="https://static.mts.ru/mts_rf/images/logo/new/mts_logo_cmyk.png" alt="МТС">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link"
+                                href="https://alfabank.ru/alfastudents/ichoosealfa/#directions">
+                                <img src="img/Alfa.jpg" alt="Альфа Банк">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link"
+                                href="https://kontur.ru/education/programs/intern?ysclid=lq4xv82jcd368102253">
+                                <img src="https://s.kontur.ru/common-v2/logos/logo-kontur-32.svg" alt="Контур">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description">
+                            <p><time datetime="2024-11-01">Закрыта до ноября</time></p>
+                        </div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://education.tbank.ru/start/">
+                                <img src="https://acdn.tinkoff.ru/static/pfa-multimedia/images/ae288629-59d7-4eb6-b074-8bb0549a43b6.svg"
+                                    alt="Тинькофф">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description">
+                            <p><time datetime="2024-12-01">Закрыта до декабря</time></p>
+                        </div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://career.aton.ru/start/ittp/">
+                                <img src="img/Aton.png" alt="Атон">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description">
+                            <p><time datetime="2025-04-01">Закрыта до 1 апреля</time></p>
+                        </div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo" style="background-color: #032337;">
+                            <a class="internship-list_card_link" href="https://route256.ozon.ru/?  rr=1">
+                                <img src="https://route256.ozon.ru/images/tild3132-6665-4238-b034-633730643336__frame_3669_2.svg"
+                                    alt="Озон Route">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://start.avito.ru/tech?ysclid=lq5ad4exyh714880742#popup:reginfo">
+                                <img src="https://static.tildacdn.com/tild6163-3035-4062-a262-373937383638/logo-avito.svg"
+                                    alt="Авито">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://sbergraduate.ru/sberseasons-moscow/">
+                                <img src="https://sbergraduate.ru/wp-content/themes/sber-graduate/assets/img/sbergraduate-logo.png"
+                                    alt="Сбербанк">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://internship.vk.company/internship/">
+                                <img src="https://internship.vk.company/_next/static/media/vk.6c2cf4fd.svg"
+                                    alt="VK">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://career.raiffeisen.ru/start">
+                                <img src="img/Raif.jpg"
+                                    alt="Райффайзенбанк">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://vtbcareer.com/">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/VTB_Logo_2018.svg"
+                                    alt="ВТБ">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo">
+                            <a class="internship-list_card_link" href="https://job.megafon.ru/vacancy/all">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/MegaFon_logo.svg"
+                                    alt="Мегафон">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
+
+                    <div class="internship-list_card" style="opacity: 0.5;">
+                        <div class="internship-list_card_logo" style="background-color: #edf2f8;">
+                            <a class="internship-list_card_link" href="https://www.digitalleague.ru/traineeships/directions">
+                                <img src="img/Liga.png"
+                                    alt="Лига Цифровой Экономики">
+                            </a>
+                        </div>
+                        <div class="internship-list_card_description"></div>
+                    </div>
             </nav>
         </section>
 
 
     </main>
-    <footer>
-        <article> 
-            <pre>
-                    $$
-                      $$$
-                          $$$$
-          $$$$$$$          $$$ $
-          $$$$$$             $ $$$$
-       $$$$$$                $ $$$$
-     $$$$$$  $$$                $$$$ $
-        $$     $$$$              $$$ $$
-                 $$$$             $$ $$$
-                   $$$ $         $$ $$$$
-                     $ $$$$      $$ $$$$
-        $$$             $$$$$$ $$$$$ $$
-      $$$ $$$$$           $$$$ $$$$$ $
-   $$$      $$$$$$$$$ $$$$$$$$$$$$
- $$$$$           $$$$$ $$$$$$  $$$$ $
-$$$$                               $$$
-            </pre>
-            <a href="mailto:pafikovpafael@gmail.com">
-                <span>
-                    Почта
-                </span>
-            </a>
-            <a href="https://t.me/Etozherraf">
-                <span>
-                    Telegram
-                </span>
-            </a>
+    <footer class="footer">
+        <article>
+            <div class="contacts">
+                <a href="#"><span>Почта</span></a>
+                <a href="#"><span>Telegram</span></a>
+                <a href="#"><span>VK</span></a>
+            </div>
+            <div class="location">г. Санкт-Петербург 52</div>
         </article>
     </footer>
 </body>
 
 </html>
-
-<!-- <link rel="stylesheet" href="outline-prototype/css/outline-prototype-label.css"> -->
-<!-- <link rel="stylesheet" href="style.css"/> -->
-<!-- <div class="qwerty">Привет</div>
-        <div id="asd">Пока</div>
-        <div class="sad">qwedefewfew</div> -->
-<!-- <h1></h1>
-        <p></p>
-        <strong></strong>
-        <b></b> -->

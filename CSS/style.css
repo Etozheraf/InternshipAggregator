@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #3C3C3C;
+    display: block-inline;
+    padding: 15px;
+    padding-top: 1px;
+    text-shadow: #000000;
+    font: 24px 'Inter';
+}
+
+.logo {
+    font: 3em 'Playfair Display';
+}
+
+.internship-category_p3 {
+    text-decoration: underline;
+}
+
+.body {
+    padding: 30px 30px;
+    padding-top: 10px;
+    background: linear-gradient(180deg, rgba(239, 239, 239, 0.5) 0%, rgba(221, 221, 221, 0.5) 100%);
+    color: #000000;
+}
+
+
+.internships {
+    font-family: 'Inter';
+}
+
+.internships_h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120%;
+
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.internship-list_card {
+    height: 287px;
+    max-width: 33%;
+    margin: 16px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px; 
+}
+
+.internship-list_card_logo {
+    height: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.internship-list_card_link {
+    display: flex; 
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.internship-list_card_logo img {
+    padding: 5% 8% 5%;
+    object-fit: contain; 
+    width: 100%;
+    max-height: 100%; 
+}
+
+.internship-list_card_description {
+    padding: 12px;
+}
+
+.kaspersky {
+    background-color: #21272F;
+}
+
+.yadro {
+    background-color: #000000;
+}
+
+
+
+footer {
+    padding: 15px;
+    background: #DDDDDD;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #000000;
+}
