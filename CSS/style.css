@@ -1,7 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 a {
@@ -11,90 +9,162 @@ a {
 
 header {
     background-color: #fff;
-    border-bottom: 1px solid #3C3C3C;
-    display: block-inline;
-    padding: 15px;
-    padding-top: 1px;
-    text-shadow: #000000;
-    font: 24px 'Inter';
+    border-bottom: 1px solid #3c3c3c20;
+
+    font: 20px 'Roboto';
+    font-weight: 500;
+    line-height: 120%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000; 
 }
 
 .logo {
+    object-fit: contain;
+    height: 80%;
+    /* width: 100%; */
+
+    /* margin-top: 10px; */
+    padding-right: 2%;
     font: 3em 'Playfair Display';
 }
 
+.internship-category-list {
+    display: flex;
+}
+
+.internship-category {
+    opacity: 70%;
+    margin: 0 40px;
+}
+
 .internship-category_p3 {
-    text-decoration: underline;
+    opacity: 100%;
+    /* text-decoration: underline; */
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 1px;
+    
 }
 
 .body {
-    padding: 30px 30px;
-    padding-top: 10px;
+    margin-top: 55px;
     background: linear-gradient(180deg, rgba(239, 239, 239, 0.5) 0%, rgba(221, 221, 221, 0.5) 100%);
+    background: #FFFFFF;
     color: #000000;
 }
 
 
 .internships {
     font-family: 'Inter';
+    /* font-family: 'Roboto'; */
 }
 
-.internships_h1 {
+.internships_p {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 44px;
     line-height: 120%;
 
-    align-items: center;
-    text-align: center;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+
 
     color: #000000;
-    font-variation-settings: 'slnt' 0;
+    /* font-variation-settings: 'slnt' 0; */
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-align: center; */
+}
+
+
+.internship-list {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: start; */
 }
 
 .internship-list_card {
-    height: 287px;
-    max-width: 33%;
-    margin: 16px;
+    /* flex: 0 1 calc(33.33% - 10px); */
+    height: 300px;
+    width: 31%;
+    margin-bottom: 16px;
+    margin-bottom: 16px;
 
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px; 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    /* box-shadow: 0px 14px 13px#000000; */
 }
 
 .internship-list_card_logo {
-    height: 240px;
+    height: 80%;
 
     display: flex;
+    flex: 0 0 80%;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .internship-list_card_link {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .internship-list_card_logo img {
-    padding: 5% 8% 5%;
-    object-fit: contain; 
-    width: 100%;
-    max-height: 100%; 
+    object-fit: contain;
+    width: 70%;
+    max-height: 70%;
 }
 
 .internship-list_card_description {
-    padding: 12px;
+    height: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px -4px 14px rgba(0, 0, 0, 0.05);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 15px; */
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
 }
+
 
 .kaspersky {
     background-color: #21272F;
@@ -106,15 +176,34 @@ header {
 
 
 
-footer {
-    padding: 15px;
-    background: #DDDDDD;
 
-    font-family: 'Inter';
+footer {
+    display: flex;
+    padding: 15px;
+    align-items: end;
+    height: 30px;
+
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
 
     color: #000000;
+    background: #dddddd73;
+}
+
+.contacts {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.location {
+    margin-left: auto;
 }
