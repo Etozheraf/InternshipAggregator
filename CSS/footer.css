@@ -1,0 +1,49 @@
+footer {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    align-items: end;
+
+    font-family: 'Roboto';
+    font-style: normal;
+
+    @media screen and (min-width: 1441px) and (max-width: 2560px) {
+        height: 80px;
+        font-size: 40px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1440px) {
+        height: 55px;
+        font-size: 24px;
+    }
+    @media screen and (min-width: 551px) and (max-width: 768px) {
+        padding: 10px;
+        height: 40px;
+        font-size: 24px;
+    }
+    @media screen and (max-width: 550px) {
+        padding: 10px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    font-weight: 400;
+    line-height: 120%;
+
+    color: #000000;
+    background: #dddddd73;
+}
+
+.contacts {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.location {
+    margin-left: auto;
+}
