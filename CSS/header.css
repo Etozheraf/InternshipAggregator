@@ -77,8 +77,12 @@ header {
     box-sizing: border-box;
 }
 
-.internship-category {
-    opacity: 60%;
+.internship-category-list a {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.active-internship-category a{
+    color: rgba(0, 0, 0, 1); 
 }
 
 .login {
