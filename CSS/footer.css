@@ -14,7 +14,6 @@ footer {
     padding: 15px;
     align-items: end;
 
-
     @media screen and (min-width: 1441px) and (max-width: 2560px) {
         height: 80px;
         font-size: 40px;
@@ -40,8 +39,8 @@ footer {
 
 .add-footer {
     width: 100%;
-    padding: 15px;
-    padding-top: 7px;
+    /* padding: 15px; */
+    /* padding-top: 7px; */
 
     @media screen and (min-width: 1441px) and (max-width: 2560px) {
         font-size: 40px;

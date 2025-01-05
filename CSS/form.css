@@ -1,0 +1,92 @@
+.internship-form {
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.internship-form label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    font-family: 'Roboto';
+    /* font-weight: bold; */
+}
+
+.internship-form input[type="text"],
+.internship-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.internship-form button {
+    background-color: #02c657;
+    color: white;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.internship-form button:hover {
+    background-color: #02fe83;
+}
+
+.results {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#internshipTable {
+    width: 95%; 
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#internshipTable th,
+#internshipTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#internshipTable td:last-child,
+#internshipTable th:last-child {
+    background-color: transparent;
+    border: none;
+}
+
+
+#internshipTable th {
+    background-color: #02c657;
+    
+    color: white;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+
+    height: 70px;
+}
+
+main {
+    margin-bottom: 80px;
+}

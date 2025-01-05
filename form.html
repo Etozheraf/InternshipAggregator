@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Стажировки, Яндекс, Тинькофф, Контур, Касперский, работа">
+    <meta name="description" content="Сервис для отслеживания стажировок">
+
+    <!-- <link rel="stylesheet" href="outline-prototype/css/outline-prototype-label.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/body.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <title>Стажировки</title>
+
+    <script src="JS/script.js" defer></script>
+    <script src="JS/formScript.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="img/Logo.png">
+        <div class="internship-category-list">
+            <p><a href="ml.html">ML</a></p>
+            <p><a href="frontend.html">Frontend</a></p>
+            <p><a href="index.html">Backend</a></p>
+        </div>
+        <div class="form">
+            <p><a href="form.html">Мои стажировки</a></p>
+        </div>
+        <div class="login">
+            <a href="#">Вход/Регистрация</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p class="internships_p">Мои стажировки</p>
+
+            <form class="internship-form" id="internshipForm">
+                <label for="internshipName">Название стажировки:</label>
+                <input type="text" id="internshipName" name="internshipName" required>
+
+                <label for="status">Статус:</label>
+                <select id="status" name="status">
+                    <option value="active">Активна</option>
+                    <option value="completed">Завершена</option>
+                    <option value="outdated">Устарела</option>
+                </select>
+
+                <label for="dates">Даты (опционально):</label>
+                <input type="text" id="dates" name="dates">
+
+                <button type="submit">Добавить стажировку</button>
+            </form>
+
+            <div class="results">
+                <table id="internshipTable">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Статус</th>
+                            <th>Даты</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="contacts">
+                <a class="contact" href="#"><span>Почта</span></a>
+                <a class="contact" href="#"><span>Telegram</span></a>
+                <a class="contact" href="#"><span>VK</span></a>
+            </div>
+            <div class="location">г. Санкт-Петербург 52</div>
+        </div>
+    </footer>
+</body>
+
+</html>
