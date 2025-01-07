@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница профиля пользователя">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/body.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/fixedFooter.css" />
+    <link rel="stylesheet" href="CSS/userStyles.css" />
+
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <title>Профиль пользователя</title>
+
+    <script src="JS/script.js" defer></script>
+    <script src="JS/userScript.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="img/Logo.png" alt="Логотип">
+        <div class="internship-category-list">
+            <p><a href="ml.html">ML</a></p>
+            <p><a href="frontend.html">Frontend</a></p>
+            <p><a href="index.html">Backend</a></p>
+        </div>
+        <div class="form">
+            <p><a href="form.html">Мои стажировки</a></p>
+        </div>
+        <div class="login">
+            <a href="user.html">Вход/Регистрация</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p class="internships_p">Профиль пользователя</p>
+            <div class="preloader" id="loader">
+                <div class="loader"></div>
+            </div>
+            <div class="user-profile">
+                <div class="user-info">
+                    <p class="hidden" id="user-username"></p>
+                    <p class="hidden" id="user-name"></p>
+                    <p class="hidden" id="user-email"></p>
+                    <p class="hidden" id="user-phone"></p>
+                    <p class="hidden" id="user-address"></p>
+                    <p class="hidden" id="user-company"></p>
+                    <p class="hidden" id="user-website"></p>
+                </div>
+                <p id="error-message" class="hidden error">⚠ Что-то пошло не так</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="contacts">
+                <a class="contact" href="#"><span>Почта</span></a>
+                <a class="contact" href="#"><span>Telegram</span></a>
+                <a class="contact" href="#"><span>VK</span></a>
+            </div>
+            <div class="location">г. Санкт-Петербург 52</div>
+        </div>
+    </footer>
