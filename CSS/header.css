@@ -90,6 +90,47 @@ header {
     margin-right: 3%;
 }
 
-.login {
-    /* margin-left: auto; */
+#login-button {
+    border: none;
+    background: transparent;
+
+    @media screen and (min-width: 1441px) and (max-width: 2560px) {
+        font: 40px 'Roboto';
+    }
+    @media screen and (min-width: 769px) and (max-width: 1440px) {
+        font: 20px 'Roboto';
+    }
+    @media screen and (min-width: 551px) and (max-width: 768px) {
+        font: 17px 'Roboto';
+    }
+    @media screen and (max-width: 550px) {
+        font: 14px 'Roboto';
+    }
+    
+}
+
+.swal2-title {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 35px;
+    color: black;
+}
+
+.swal2-input {
+    font-family: 'Inter';
+    border: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+.swal2-confirm {
+    font-family: 'Roboto';
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.swal2-cancel {
+    font-family: 'Roboto';
+    border: 1px solid black;
+    background-color: white;
+    color: black; 
 }

@@ -1,3 +1,21 @@
+toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-bottom-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "10000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('internshipForm');
     const internshipTable = document.getElementById('internshipTable').getElementsByTagName('tbody')[0];
@@ -11,10 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const status = form.status.value;
         const dates = form.dates.value;
 
-        addInternshipToTable(internshipName, status, dates);
+        if (!internshipName) {
+            toastr.error('Пожалуйста, введите название стажировки.', 'Ошибка');
+            return;
+        }
 
+        addInternshipToTable(internshipName, status, dates);
         saveInternships();
-        
         form.reset();
     });
 
@@ -30,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         statusCell.textContent = status;
         datesCell.textContent = dates;
 
-        
         const deleteButton = document.createElement('button');
         deleteButton.textContent = '✖';
         deleteButton.style.background = 'none';
@@ -42,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             internshipTable.deleteRow(newRow.rowIndex - 1);
             saveInternships();
         };
-        
+
         actionsCell.appendChild(deleteButton);
     }
 

@@ -1,3 +1,21 @@
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": true,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "10000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     const loader = document.getElementById("loader");
 
@@ -17,13 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(`https://jsonplaceholder.typicode.com/users/${randomUserId}`);
             
             if (!response.ok) {
+                toastr.error('Сеть недоступна', 'Ошибка');
                 throw new Error("Сеть недоступна");
             }
 
             const user = await response.json();
             renderUserData(user);
         } catch (error) {
-            errorMessage.classList.remove('hidden')
+            toastr.error('⚠ Что-то пошло не так', 'Ошибка');
         } finally {
             loader.style.display = "none";
         }

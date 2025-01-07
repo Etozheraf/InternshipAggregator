@@ -17,6 +17,13 @@
     <link rel="icon" type="image/png" href="img/Logo.png">
     <title>Профиль пользователя</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script src="JS/script.js" defer></script>
     <script src="JS/userScript.js" defer></script>
 </head>
@@ -33,13 +40,13 @@
             <p><a href="form.html">Мои стажировки</a></p>
         </div>
         <div class="login">
-            <a href="user.html">Вход/Регистрация</a>
+            <button href="user.html" id="login-button">Вход/Регистрация</a>
         </div>
     </header>
 
     <main>
         <section>
-            <p class="internships_p">Профиль пользователя</p>
+            <p class="internships_p">Профиль пользователя</p>          
             <div class="preloader" id="loader">
                 <div class="loader"></div>
             </div>
@@ -53,7 +60,6 @@
                     <p class="hidden" id="user-company"></p>
                     <p class="hidden" id="user-website"></p>
                 </div>
-                <p id="error-message" class="hidden error">⚠ Что-то пошло не так</p>
         </section>
     </main>
 
